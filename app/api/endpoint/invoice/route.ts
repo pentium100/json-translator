@@ -25,3 +25,11 @@ export async function POST(req: NextRequest) {
     const data = resp.success ? resp.data : { error: resp.message };
     return NextResponse.json(data);
 }
+
+
+/*
+
+以下是发票或者收条的文本信息，请从中提取出发票日期，供应商，客户，发票币别，发票金额，发票项目, 如果是一张住宿发票，请额外提取住宿日期，房型，房间数，人数，房间单价.请仔细检查你生成的数据，如果不能确定数据正确，请放空。
+"""
+
+ */

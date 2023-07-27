@@ -2,12 +2,29 @@
 
 
 export interface Invoice {
+    title?: string;
     invoiceDate: RawDateString;
+    chargeType: string;
     supplier: string;
     customer: string;
     invoiceAmount: number;
+    currency: string;
+
 
 }
+/*
+type Item = {
+
+    days?: number;
+    dateFrom: RawDateString;
+    dateTo: RawDateString;
+    peoples?: number;
+    quantity?: number;
+    amount: number;
+    unitPrice: number;
+}
+
+ */
 
 
 type oneToNine = 1|2|3|4|5|6|7|8|9

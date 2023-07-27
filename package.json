@@ -14,6 +14,7 @@
     "@uiw/react-textarea-code-editor": "^2.1.7",
     "autoprefixer": "10.4.14",
     "dotenv": "^16.3.1",
+    "encoding": "^0.1.13",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "googleapis": "^122.0.0",

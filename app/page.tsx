@@ -201,7 +201,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <EndpointList endpoints={endpoints} onClickEndpoint={onClickEndpoint}/>
+      {/*<EndpointList endpoints={endpoints} onClickEndpoint={onClickEndpoint}/>*/}
     </>
   );
 }
