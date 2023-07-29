@@ -3,12 +3,14 @@
 
 export interface Invoice {
     title?: string;
-    invoiceDate: RawDateString;
+    no: string;
+    Date: RawDateString;
     chargeType: string;
     supplier: string;
-    customer: string;
-    invoiceAmount: number;
-    currency: string;
+    customer?: string;
+    client?: string;
+    amount: number;
+    currency: Currency;
 
 
 }
@@ -26,7 +28,10 @@ type Item = {
 
  */
 
+type Currency = String3
 
+type Char = 'A'|'B'|'C'|'D'|'E'|'F'|'G'|'H'|'I'|'J'|'K'|'L'|'M'|'N'|'O'|'P'|'Q'|'R'|'S'|'T'|'U'|'V'|'W'|'X'|'Y'|'Z'
+type String3 = `${Char}${Char}${Char}`
 type oneToNine = 1|2|3|4|5|6|7|8|9
 type zeroToNine = 0|1|2|3|4|5|6|7|8|9
 /**
